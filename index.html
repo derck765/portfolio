@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,9 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="https://github.com/derck765derck765">GitHub</a></li>
+          <li>
+            <a href="https://github.com/derck765" target="_blank">GitHub</a>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -31,15 +33,24 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="" onclick="toggleMenu()">GitHub</a></li>
+          <li>
+            <a
+              href="https://github.com/derck765"
+              target="_blank"
+              onclick="toggleMenu()"
+              >GitHub</a
+            >
+          </li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Dereck Vasquez profile picture" />
+        <img
+          src="./assets/profile-pic.png"
+          alt="Dereck Vasquez profile picture"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -51,7 +62,10 @@
           >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
             Contact Info
           </button>
         </div>
@@ -60,28 +74,29 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/dereckve'"
+            onclick="
+              window.open('https://www.linkedin.com/in/dereckve', '_blank')
+            "
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/derck765'"
+            onclick="window.open('https://github.com/derck765', '_blank')"
           />
         </div>
       </div>
     </section>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href = './#about'"
+    />
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -100,17 +115,20 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Bachelors Degree in Computer Science <br> from New Jersey Institute of Technology</p>
+              <p>Bachelors Degree in Computer Science</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a recent CS graduate from the New Jersey Institute of
+              Technology. My software development journey started in my
+              vocational highschool when I was 14 where I learned the basics of
+              HTML, CSS, JavaScript, C++, and Python. I expanded on those skills
+              throughout my college years, working on various projects that
+              helped me refine my abilities as a developer. Outside of coding, I
+              have a strong passion for astronomy and green technology.
+              Hopefully, some day I am able to contribute to the development of
+              sustainable technologies to help protect our planet.
             </p>
           </div>
         </div>
@@ -119,7 +137,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
     <section id="experience">
@@ -128,7 +146,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Programming Languages</h2>
             <div class="article-container">
               <article>
                 <img
@@ -159,7 +177,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
+                  <h3>JavaScript</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -170,8 +188,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>C/C++</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -182,7 +200,45 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
                   <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks and Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Chakra UI</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -196,11 +252,6 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -208,18 +259,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
+                  <h3>Phaser</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -230,18 +270,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
+                  <h3>Socket.IO</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -253,95 +282,170 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+      <div class="project-carousel">
+        <button
+          class="project-carousel-arrow"
+          type="button"
+          onclick="changeProject(-1)"
+          aria-label="Previous project"
+        >
+          &#10094;
+        </button>
+        <div class="project-viewport">
+          <div class="project-track" id="projectTrack">
+            <div class="details-container color-container project-card">
+              <h2 class="project-title">Covey Town</h2>
+
+              <div class="project-content">
+                <div class="project-visual">
+                  <div class="article-container">
+                    <img
+                      src="./assets/covey.png"
+                      alt="Covey Town project"
+                      class="project-img"
+                    />
+                  </div>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        window.open(
+                          'https://github.com/derck765/covey.town',
+                          '_blank',
+                        )
+                      "
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-description">
+                  <h3>About the Project</h3>
+                  <p>
+                    Add a description of Covey Town here. Explain what the
+                    project does, its main features, and what you contributed to
+                    its development.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container project-card">
+              <h2 class="project-title">Med Track</h2>
+
+              <div class="project-content">
+                <div class="project-visual">
+                  <div class="article-container">
+                    <img
+                      src="./assets/medtracker/logo.png"
+                      alt="Med Track project"
+                      class="project-img"
+                    />
+                  </div>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        window.open(
+                          'https://github.com/derck765/MedTracker',
+                          '_blank',
+                        )
+                      "
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-description">
+                  <h3>About the Project</h3>
+                  <p>
+                    Add a description of Med Track here. Explain its purpose,
+                    the features it provides, and the technologies or tools you
+                    used to build it.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/derck765'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container project-card">
+              <h2 class="project-title">Trash Dash</h2>
+
+              <div class="project-content">
+                <div class="project-visual">
+                  <div class="article-container">
+                    <img
+                      src="./assets/trash dash.png"
+                      alt="Trash Dash project"
+                      class="project-img"
+                    />
+                  </div>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        window.open(
+                          'https://github.com/derck765/Trash-Dash',
+                          '_blank',
+                        )
+                      "
+                    >
+                      Github
+                    </button>
+
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="
+                        window.open(
+                          'https://echorah.itch.io/trash-dash',
+                          '_blank',
+                        )
+                      "
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-description">
+                  <h3>About the Project</h3>
+                  <p>
+                    Add a description of Trash Dash here. Explain the gameplay,
+                    its objective, interesting features, and what you learned
+                    while developing it.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <button
+          class="project-carousel-arrow"
+          type="button"
+          onclick="changeProject(1)"
+          aria-label="Next project"
+        >
+          &#10095;
+        </button>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -352,7 +456,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:dereckve2004@gmail.com">dereckve2004@gmail.com</a></p>
+          <p>
+            <a href="mailto:dereckve2004@gmail.com">dereckve2004@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +466,11 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/dereckve">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/dereckve" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -369,9 +479,11 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="https://github.com/derck765derck765">GitHub</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="https://github.com/derck765" target="_blank">GitHub</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>

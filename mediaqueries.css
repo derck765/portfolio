@@ -37,6 +37,9 @@
   section {
     margin: 0 5%;
   }
+  #projects {
+    margin: 0 5%;
+  }
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -99,5 +102,29 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .project-content {
+    flex-direction: column;
+  }
+  .project-visual,
+  .project-description {
+    width: 100%;
+  }
+  .project-description {
+    align-self: auto;
+    text-align: center;
+  }
+  .project-carousel {
+    gap: 0.5rem;
+  }
+  .project-carousel-arrow {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+  }
+  .project-viewport {
+    max-width: 100%;
+  }
+  .project-visual .article-container {
+    height: clamp(220px, 58vw, 300px);
   }
 }
