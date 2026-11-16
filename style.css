@@ -375,6 +375,9 @@ article .icon {
 #projects {
   position: relative;
   margin: 0 5rem;
+  height: fit-content;
+  padding-top: 2vh;
+  padding-bottom: 7rem;
 }
 
 .color-container {
@@ -446,15 +449,17 @@ article .icon {
 
 .project-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
 }
 
 .project-visual {
-  flex: 1;
+  flex: none;
   min-width: 0;
+  width: 100%;
 }
 
 .project-visual .article-container {
@@ -478,9 +483,10 @@ article .icon {
 }
 
 .project-description {
-  flex: 1;
+  flex: none;
   min-width: 0;
-  align-self: flex-start;
+  width: 100%;
+  box-sizing: border-box;
   text-align: left;
   padding: 1rem;
 }

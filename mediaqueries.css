@@ -39,6 +39,7 @@
   }
   #projects {
     margin: 0 5%;
+    padding-bottom: 0;
   }
   .section__pic-container {
     width: 275px;
