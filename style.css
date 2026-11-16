@@ -485,14 +485,37 @@ article .icon {
   padding: 1rem;
 }
 
-.project-description h3 {
+.project-description h3,h2 {
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
 
 .project-description p {
   line-height: 1.7;
+  color: black;
 }
+
+.project-languages {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.project-language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-languages {
+  margin: 0;
+}
+
 
 /* CONTACT */
 
