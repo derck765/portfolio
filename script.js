@@ -14,6 +14,13 @@ function changeProject(direction) {
   currentProject = (currentProject + direction + totalProjects) % totalProjects;
 
   track.style.transform = `translateX(-${currentProject * 100}%)`;
+
+  if (window.matchMedia("(max-width: 1200px)").matches) {
+    document.getElementById("projects").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 }
 
 const projectImageDialog = document.querySelector(".project-image-dialog");
