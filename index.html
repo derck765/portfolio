@@ -490,38 +490,33 @@
                 <div class="project-description">
                   <h3>About the Project</h3>
                   <p>
-                    A bitmap image manipulation and compression program in C
-                    that allows users to modify grayscale images and compress
-                    them using a quadtree data structure. The program reads
-                    pixel intensity values from an input file and provides an
-                    interactive menu for rotating and flipping images. When the
-                    user saves the image, the program recursively divides it
-                    into four quadrants, identifying uniform regions and
-                    representing them as individual nodes in a quadtree. This
-                    allows the image to be represented through a hierarchical
-                    structure rather than storing every pixel individually.
+                    A C program that allows users to manipulate and compress
+                    grayscale bitmap images using a quadtree data structure. The
+                    program reads pixel intensity values from an input file and
+                    provides an interactive menu where users can rotate images
+                    clockwise or counterclockwise and flip them horizontally or
+                    vertically. After making their desired modifications, users
+                    can save the image, which triggers a recursive quadtree
+                    algorithm that divides the image into four quadrants until
+                    each region contains uniform pixel intensity values. These
+                    regions are then represented as individual nodes in a tree,
+                    allowing the image to be stored in a hierarchical format
+                    rather than representing every pixel individually. The
+                    program then saves this quadtree representation to an output
+                    file. Additionally, it uses dynamic memory allocation to
+                    manage the bitmap and tree structures and includes memory
+                    cleanup functions to free allocated resources when the
+                    program finishes.
                   </p>
-                  <h3>Key Features</h3>
-                  <p>
-                    <li>Reads bitmap pixel data from input files.</li>
-                    <li>Rotates images clockwise and counterclockwise.</li>
-                    <li>Supports horizontal and vertical image flipping.</li>
-                    <li>
-                      Uses a recursive quadtree algorithm to represent image
-                      data.
-                    </li>
-                    <li>
-                      Identifies uniform pixel regions to simplify image
-                      representation.
-                    </li>
-                    <li>
-                      Saves the compressed image structure to an output file.
-                    </li>
-                    <li>
-                      Implements dynamic memory allocation and recursive memory
-                      cleanup.
-                    </li>
-                  </p>
+                  <h3>Technical Skills</h3>
+                  <div class="project-language-list">
+                    <div class="project-languages">C programming</div>
+                    <div class="project-languages">
+                      Dynamic Memory Allocation
+                    </div>
+                    <div class="project-languages">Structs</div>
+                    <div class="project-languages">Quadtree Data Structure</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -554,32 +549,24 @@
                 <div class="project-description">
                   <h3>About the Project</h3>
                   <p>
-                    A command-line Mancala game simulator in C that processes
-                    player moves, manages the game board, and tracks scores
-                    according to the game's rules. The program reads game
-                    configurations and player moves from an input file,
-                    simulates the distribution of pebbles across the board, and
-                    handles capturing mechanics and turn validation. It also
-                    detects game-ending conditions and determines the winner
-                    based on each player's final score.
+                    A C program that simulates a game of Mancala by processing
+                    player moves and keeping track of the game board and scores.
+                    The program reads an initial board configuration and a
+                    sequence of moves from an input file, allowing users to
+                    simulate games using either a default board setup or a
+                    custom configuration. As the game progresses, the program
+                    distributes pebbles between pits, validates player turns and
+                    legal moves, handles capturing mechanics when a move ends in
+                    an opponent's pit, and checks for situations where a player
+                    has no available moves. The program also keeps track of each
+                    player's score, determines when the game has ended, and
+                    displays the final board configuration, scores, and winner
+                    in the terminal.
                   </p>
-                  <h3>Key Features</h3>
-                  <p>
-                    <li>
-                      Reads initial board configurations and player moves from input files.
-                    </li>
-                    <li>
-                      Simulates pebble distribution across the game board.
-                    </li>
-                    <li>Implements turn validation and legal move checking.</li>
-                    <li>Handles pebble-capturing mechanics and scoring.</li>
-                    <li>
-                      Detects game-ending conditions and determines the winner.
-                    </li>
-                    <li>
-                      Displays the final board state and player scores in the terminal.
-                    </li>
-                  </p>
+                  <h3>Language</h3>
+                  <div class="project-language-list">
+                    <div class="project-languages">C</div>
+                  </div>
                 </div>
               </div>
             </div>
