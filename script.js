@@ -15,3 +15,32 @@ function changeProject(direction) {
 
   track.style.transform = `translateX(-${currentProject * 100}%)`;
 }
+
+const projectImageDialog = document.querySelector(".project-image-dialog");
+const projectImagePreview = document.querySelector(".project-image-dialog-img");
+
+function openProjectImage(image) {
+  projectImagePreview.src = image.src;
+  projectImagePreview.alt = image.alt;
+  projectImageDialog.showModal();
+}
+
+document.querySelectorAll(".project-img").forEach((image) => {
+  image.addEventListener("click", () => openProjectImage(image));
+  image.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openProjectImage(image);
+    }
+  });
+});
+
+document
+  .querySelector(".project-image-dialog-close")
+  .addEventListener("click", () => projectImageDialog.close());
+
+projectImageDialog.addEventListener("click", (event) => {
+  if (event.target === projectImageDialog) {
+    projectImageDialog.close();
+  }
+});

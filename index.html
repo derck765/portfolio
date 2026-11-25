@@ -305,6 +305,9 @@
                       src="./assets/covey.png"
                       alt="Covey Town project"
                       class="project-img"
+                      tabindex="0"
+                      role="button"
+                      aria-label="View full-size image: Covey Town project"
                     />
                   </div>
                   <div class="btn-container">
@@ -360,6 +363,9 @@
                       src="./assets/medtracker.png"
                       alt="Med Tracker project"
                       class="project-img"
+                      tabindex="0"
+                      role="button"
+                      aria-label="View full-size image: Med Tracker project"
                     />
                   </div>
 
@@ -410,6 +416,9 @@
                       src="./assets/trash dash.png"
                       alt="Trash Dash project"
                       class="project-img"
+                      tabindex="0"
+                      role="button"
+                      aria-label="View full-size image: Trash Dash project"
                     />
                   </div>
                   <div class="btn-container">
@@ -470,6 +479,9 @@
                       src="./assets/image.png"
                       alt="Image Modification and Compression project"
                       class="project-img"
+                      tabindex="0"
+                      role="button"
+                      aria-label="View full-size image: Image Modification and Compression project"
                     />
                   </div>
 
@@ -529,6 +541,9 @@
                       src="./assets/pits.png"
                       alt="Mancala project"
                       class="project-img"
+                      tabindex="0"
+                      role="button"
+                      aria-label="View full-size image: Mancala project"
                     />
                   </div>
 
@@ -588,6 +603,16 @@
         onclick="location.href = './#contact'"
       />
     </section>
+    <dialog class="project-image-dialog" aria-label="Project image preview">
+      <button
+        class="project-image-dialog-close"
+        type="button"
+        aria-label="Close image preview"
+      >
+        &times;
+      </button>
+      <img class="project-image-dialog-img" alt="" />
+    </dialog>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
