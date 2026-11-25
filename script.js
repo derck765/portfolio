@@ -11,8 +11,7 @@ function changeProject(direction) {
   const track = document.getElementById("projectTrack");
   const totalProjects = track.children.length;
 
-  currentProject =
-    (currentProject + direction + totalProjects) % totalProjects;
+  currentProject = (currentProject + direction + totalProjects) % totalProjects;
 
   track.style.transform = `translateX(-${currentProject * 100}%)`;
 }

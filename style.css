@@ -117,7 +117,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-links a:hover{
+.menu-links a:hover {
   color: grey;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
   opacity: 1;
-   transform: none;
+  transform: none;
 }
 
 /* SECTIONS */
@@ -207,7 +207,7 @@ section {
   gap: 1rem;
 }
 
-#profile #socials-container img:hover{
+#profile #socials-container img:hover {
   transform: scale(1.2);
 }
 
@@ -234,7 +234,7 @@ section {
   border-radius: 2rem;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.2);
 }
 
@@ -437,7 +437,9 @@ article .icon {
   font-size: 2.5rem;
   color: rgb(53, 53, 53);
   cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .project-carousel-arrow:hover {
@@ -491,7 +493,8 @@ article .icon {
   padding: 1rem;
 }
 
-.project-description h3,h2 {
+.project-description h3,
+h2 {
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
@@ -521,7 +524,6 @@ article .icon {
 .project-languages {
   margin: 0;
 }
-
 
 /* CONTACT */
 
